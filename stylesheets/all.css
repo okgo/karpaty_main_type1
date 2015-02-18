@@ -1,0 +1,1505 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/** Base container **/
+
+.kalendae {
+	display: inline-block;zoom:1;*display:inline;
+	background:#eee;
+	padding:10px;
+	margin:5px;
+	border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size:11px;
+	font-family:'Helvetica Neue', 'Helvetica';
+	cursor:default;
+	position:relative;
+}
+
+/** Popup Container for Kalendae.Input **/
+.kalendae.k-floating {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	margin:0;
+	box-shadow:0 1px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.75);
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.75);
+}
+
+/** Kalendae.Input's popup close button **/
+.kalendae .k-btn-close {
+	position:absolute;
+	top:-8px;
+	right:-8px;
+	width:16px;
+	height:16px;
+	background:white;
+	border:2px solid #ccc;
+	color:#999;
+	line-height:17px;
+	text-align:center;
+	font-size:13px;
+	border-radius:10px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.75);
+	cursor:pointer;
+	text-decoration:none;
+}
+.kalendae .k-btn-close:after {content:"\2716";}
+.kalendae .k-btn-close:hover {
+	color:#7EA0E2;
+	background:white;
+	border-color:#7EA0E2;
+}
+
+/** Month Container **/
+.kalendae .k-calendar {display: inline-block;zoom:1;*display:inline;width:155px;vertical-align:top;}
+
+/** Month Separator **/
+.kalendae .k-separator {display: inline-block;zoom:1;*display:inline;width:2px;vertical-align:top;background:#ddd;height:155px;margin:0px 10px;}
+
+/** Month Title Row **/
+.kalendae .k-title {text-align:center;white-space:nowrap;position:relative;height:18px;}
+.kalendae .k-caption {font-size:12px;line-height:18px;}
+
+
+/** Month and Year Buttons **/
+.kalendae .k-btn-previous-month,
+.kalendae .k-btn-next-month,
+.kalendae .k-btn-previous-year,
+.kalendae .k-btn-next-year {
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	position:absolute;
+	top:-3px;
+	color:#777;
+	font-size:26px;
+	line-height: 18px;
+	font-weight: bold;
+	font-family: arial;
+	text-decoration:none;
+}
+
+.kalendae .k-btn-previous-year {left:0;}
+.kalendae .k-btn-previous-month {left:16px;}
+.kalendae .k-btn-next-month {right:16px;}
+.kalendae .k-btn-next-year {right:0;}
+
+.kalendae .k-btn-previous-month:after {content:"\2039";}
+.kalendae .k-btn-next-month:after {content:"\203A";}
+
+.kalendae .k-btn-previous-year:after {content:"\00AB";}
+.kalendae .k-btn-next-year:after {content:"\00BB";}
+
+.kalendae .k-btn-previous-month:hover,
+.kalendae .k-btn-next-month:hover {color:#7EA0E2;}
+
+.kalendae .k-btn-previous-year:hover,
+.kalendae .k-btn-next-year:hover {color:#6FDF81;}
+
+/** Remove extra buttons when calendar shows multiple months **/
+.kalendae .k-first-month .k-btn-next-month,
+.kalendae .k-middle-month .k-btn-next-month,
+.kalendae .k-middle-month .k-btn-previous-month,
+.kalendae .k-last-month .k-btn-previous-month,
+.kalendae .k-first-month .k-btn-next-year,
+.kalendae .k-middle-month .k-btn-next-year,
+.kalendae .k-middle-month .k-btn-previous-year,
+.kalendae .k-last-month .k-btn-previous-year {display:none;}
+
+/** Disable year nav option **/
+.kalendae .k-title.k-disable-year-nav .k-btn-next-year,
+.kalendae .k-title.k-disable-year-nav .k-btn-previous-year { display: none; }
+.kalendae .k-title.k-disable-year-nav .k-btn-next-month { right: 0; }
+.kalendae .k-title.k-disable-year-nav .k-btn-previous-month { left: 0; }
+
+/** Force specific width for month container contents **/
+.kalendae .k-title,
+.kalendae .k-header,
+.kalendae .k-days {
+	width:154px;
+	display:block;
+	overflow:hidden;
+}
+
+
+/** Hide unusable buttons **/
+.kalendae.k-disable-next-month-btn .k-btn-next-month,
+.kalendae.k-disable-previous-month-btn .k-btn-previous-month,
+.kalendae.k-disable-next-year-btn .k-btn-next-year,
+.kalendae.k-disable-previous-year-btn .k-btn-previous-year {
+	display:none;
+}
+
+
+/** Week columns and day cells **/
+.kalendae .k-header span,
+.kalendae .k-days span {
+	float:left;
+	margin:1px 1px;
+}
+
+.kalendae .k-header span {
+	text-align:center;
+	font-weight:bold;
+	width:20px;
+	padding:1px 0;
+	color:#666;
+}
+
+.kalendae .k-days span {
+	text-align:right;
+	width:13px;
+	height:1.1em;
+	line-height:1em;
+	padding:2px 3px 2px 2px;
+	border:1px solid transparent;
+	border-radius:3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color:#999;
+}
+
+/** Today **/
+.kalendae .k-today {
+	text-decoration:underline;
+}
+
+/** Days inside of the month view **/
+.kalendae .k-days span.k-in-month.k-active {
+	border-color:#ddd;
+	background-color:#fff;
+	color:#333;
+}
+/** Days outside of the month view (before the first day of the month, after the last day of the month) **/
+.kalendae .k-days span.k-out-of-month {color:#ddd;}
+
+/** Selectable  **/
+.kalendae .k-days span.k-active {
+	cursor:pointer;
+}
+
+/** Selected day, when outside the selectable area **/
+.kalendae .k-days span.k-selected {
+	border-color:#1072A5;
+	color:#1072A5;
+}
+
+/** Selected day, when inside the selectable area **/
+.kalendae .k-days span.k-selected.k-active {
+	background:#7EA0E2;
+	color:white;
+}
+
+/** Days between the start and end points on a range, outside of the selectable area **/
+.kalendae .k-days span.k-range {
+	background:none;
+	border-color:#6DD4FE;
+}
+
+/** Days between the start and end points on a range, inside of the selectable area **/
+.kalendae .k-days span.k-range.k-in-month {
+	background:#C4D4F1;
+	border-color:#19AEFE;
+	color:#333;
+}
+
+/** Selectable day, hovered **/
+.kalendae .k-days span.k-active:hover {
+	border-color:#666;
+}
+
+/** Selectable week, hovered **/
+.kalendae .k-week:hover span.k-active {
+	border-color:#666;
+}
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/*-------------------------------------IE8 ONLY CODE BELOW THIS LINE--------------------------------------------*/
+
+.kalendae.ie8.k-floating {
+	border:1px solid #ccc;
+}
+
+.kalendae.ie8 .k-btn-close {
+	width:20px;
+	height:20px;
+	border:none;
+	background:url('close.png') no-repeat top left;
+}
+.kalendae.ie8 .k-btn-close:after {display:none;}
+
+.kalendae.ie8 .k-btn-previous-month,
+.kalendae.ie8 .k-btn-next-month,
+.kalendae.ie8 .k-btn-previous-year,
+.kalendae.ie8 .k-btn-next-year {width:16px;height:16px;cursor:pointer;background:#777 url('arrows.png') no-repeat center left;position:absolute;top:0;}
+
+.kalendae.ie8 .k-btn-next-month,
+.kalendae.ie8 .k-btn-next-year {background-position:center right;}
+
+.kalendae.ie8 .k-btn-previous-month:hover,
+.kalendae.ie8 .k-btn-next-month:hover {background-color:#7EA0E2;}
+
+.kalendae.ie8 .k-btn-previous-year,
+.kalendae.ie8 .k-btn-next-year {background-color:#333;}
+
+.kalendae.ie8 .k-btn-previous-year:hover,
+.kalendae.ie8 .k-btn-next-year:hover {background-color:#6FDF81;}
+
+.kalendae.ie8 .k-btn-previous-month:after,
+.kalendae.ie8 .k-btn-next-month:after,
+.kalendae.ie8 .k-btn-previous-year:after,
+.kalendae.ie8 .k-btn-next-year:after {display:none;}
+
+/* See http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin/ */
+/* Default font size in pixels if not overridden. */
+/* Convert PX units to EMs.
+Ex: margin-right: pem(16);
+*/
+/* Used to convert PX to EMs for multiple properties or values or both.
+$base is an optional measurement that allows making measurements relative to the parent font size rather than the current. Also accepts a list of lists (instead a list of values) for properties that accept multiple lists of values. Only numbers of converted; everything else is passed through.
+
+Examples:
+
+@include scale(line-height, 30)
+@include scale(line-height, 30, 16)
+@include scale(width height, 125);
+@include scale(padding, 0 25, 16);
+@include scale(text-shadow, (#0d6e28 1 1) (#777 0 0 2), 16);
+@include scale(box-shadow, (inset 0 0 0 1 #2a9022) (inset 0 0 3 #459966), 16);
+*/
+/* line 4, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+p {
+  margin: 0; }
+
+/* line 6, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+ul, ol {
+  margin: 0;
+  padding: 0; }
+  /* line 9, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  ul li, ol li {
+    list-style-type: none;
+    list-style: none; }
+
+/* line 12, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+menu {
+  margin: 0;
+  padding: 0; }
+
+/* line 15, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+html, body {
+  height: 100%; }
+
+/* line 17, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+body {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: normal;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  line-height: 1.5em;
+  color: #fff;
+  font-weight: 400;
+  background-color: #000;
+  position: relative;
+  min-width: 320px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 680px; }
+
+/* line 33, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  *zoom: 1; }
+
+/* line 41, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.wrap {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  /* line 45, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .wrap .main {
+    height: 100%;
+    padding-top: 4%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/* line 52, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #fff; }
+
+/* line 59, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+h1 {
+  font-size: 2.6875em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  line-height: 1.23256em; }
+
+/* line 64, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+h2 {
+  font-size: 2.6875em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  line-height: 1.23256em;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+/* line 72, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.ez-hide {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 1.125em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 1.125em;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top; }
+  /* line 79, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .ez-hide:hover {
+    cursor: pointer; }
+
+/* line 81, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.ez-checkbox, .ez-radio {
+  background: url("../images/custom-radio.png") transparent 0 0 no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 1.125em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 1.125em;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: 0.5;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+  /* line 90, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .ez-checkbox:hover, .ez-radio:hover {
+    cursor: pointer; }
+
+/* line 93, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.ez-checked {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  background-position: 0em -1.125em; }
+
+/* line 94, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.ez-selected {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  background-position: 0em -1.125em; }
+
+/* line 97, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+a {
+  color: #52d4ff;
+  text-decoration: underline; }
+  /* line 100, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  a:hover {
+    text-decoration: none; }
+
+/* line 103, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.stn-btn {
+  position: relative;
+  width: 100%;
+  border: 3px solid #52d4ff;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 3.77778em;
+  font-size: 1.125em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  line-height: 3.44444em;
+  text-transform: uppercase;
+  color: #fff;
+  background: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 0; }
+  /* line 116, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .stn-btn span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 3.44444em;
+    width: 0;
+    background: rgba(32, 210, 255, 0.5);
+    z-index: -2; }
+
+/* line 128, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+label {
+  display: block;
+  font-size: 0.875em;
+  font-style: italic;
+  color: #fff; }
+
+/* line 135, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+input[type='text'] {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 16.13636em;
+  font-size: 1.375em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  line-height: 1.27273em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 3.09091em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding: 0.90909em 0.90909em 0.90909em 1.81818em;
+  color: #313131;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: none; }
+  /* line 145, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  input[type='text']#all-search-input {
+    width: 100%;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding: 0.90909em 1.81818em 0.90909em 3.18182em; }
+
+/* line 152, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.kalendae {
+  background: #e3e2e2;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 0.75em;
+  padding: 0;
+  color: #000; }
+  /* line 159, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae.k-floating {
+    box-shadow: none; }
+  /* line 160, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-btn-previous-year, .kalendae .k-btn-previous-month, .kalendae .k-btn-next-year, .kalendae .k-btn-next-month {
+    font-size: 24px;
+    height: 26px;
+    line-height: 26px;
+    color: #898989;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  /* line 169, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-btn-previous-month:hover, .kalendae .k-btn-next-month:hover {
+    color: #52d4ff; }
+  /* line 172, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-btn-previous-year:hover, .kalendae .k-btn-next-year:hover {
+    color: #000; }
+  /* line 174, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-calendar {
+    width: 210px; }
+  /* line 175, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-title, .kalendae .k-header, .kalendae .k-days {
+    width: 210px; }
+  /* line 176, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-caption {
+    font-size: 14px;
+    line-height: 26px; }
+  /* line 180, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-btn-close {
+    display: none; }
+  /* line 181, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-title {
+    height: 26px; }
+  /* line 183, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-header span {
+    width: 30px;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: normal;
+    color: #000; }
+  /* line 191, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .kalendae .k-days {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff; }
+    /* line 194, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .kalendae .k-days span {
+      border: 1px solid #fff;
+      border-right: 0;
+      border-top: 0;
+      background: none;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    /* line 208, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .kalendae .k-days span.k-in-month.k-active {
+      border-color: #fff;
+      background: none;
+      color: #000;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+      /* line 213, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+      .kalendae .k-days span.k-in-month.k-active:hover {
+        background: #fff; }
+      /* line 214, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+      .kalendae .k-days span.k-in-month.k-active.k-today {
+        background: #b4b4b3;
+        text-decoration: none; }
+        /* line 217, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+        .kalendae .k-days span.k-in-month.k-active.k-today.k-selected {
+          background: #39b4dc; }
+    /* line 220, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .kalendae .k-days span.k-selected.k-active {
+      background: #39b4dc;
+      color: #fff; }
+      /* line 223, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+      .kalendae .k-days span.k-selected.k-active:hover {
+        background: #39b4dc; }
+    /* line 225, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .kalendae .k-days span.k-out-of-month {
+      color: #fff; }
+
+/* line 231, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.social {
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  width: 100%;
+  text-align: center; }
+  /* line 237, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .social ul {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 2.6875em; }
+  /* line 241, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .social li {
+    float: left;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-right: 0.625em; }
+    /* line 244, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .social li:last-child {
+      margin-right: 0; }
+  /* line 246, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .social a {
+    display: block;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 2.8125em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 2.8125em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    opacity: 0.5;
+    background: url("../images/social.png") 0 0 no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    outline: none; }
+    /* line 258, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .social a:hover {
+      opacity: 1; }
+    /* line 259, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .social a.instagram {
+      background-position: 0 0; }
+    /* line 260, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .social a.gplus {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -2.6875em; }
+    /* line 261, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .social a.vk {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -5.375em; }
+    /* line 262, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .social a.twitter {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -8.0625em; }
+    /* line 263, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+    .social a.facebook {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -10.75em; }
+
+/* line 268, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.video-wrapper {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background: url("../images/slide1.jpg") center center no-repeat; }
+
+/* line 281, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.video-cont {
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 293, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+.custom-select {
+  position: relative;
+  display: block;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-top: 0.9375em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 2.375em;
+  padding: 0;
+  border: 1px solid #d5d5d5; }
+  /* line 300, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .custom-select select {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    outline: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1em;
+    color: #000;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    line-height: 2.375em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 2.375em;
+    background: #fff;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-left: 0.375em; }
+  /* line 317, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .custom-select:after {
+    content: "";
+    position: absolute;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 1.125em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 0.5625em;
+    top: 50%;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    right: 0.5625em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: -0.3125em;
+    background-image: url("../images/select-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 2;
+    /* This hack make the select behind the arrow clickable in some browsers */
+    pointer-events: none; }
+  /* line 332, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .custom-select:hover, .custom-select:focus {
+    border: 1px solid #52d4ff; }
+  /* line 333, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .custom-select option {
+    font-weight: normal;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-left: 0.375em; }
+
+/* line 341, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+x:-o-prefocus, .custom-select::after {
+  display: none; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 345, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .custom-select select::-ms-expand {
+    display: none; }
+
+  /* line 346, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_ui.scss */
+  .custom-select select:focus::-ms-value {
+    background: transparent;
+    color: #000; } }
+/* line 1, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.main-header {
+  margin: 0 auto;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding: 0em 0.3125em;
+  max-width: 960px;
+  text-align: center; }
+  /* line 6, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .main-header h2 {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin: 2.32558em 0em 0.55814em 0em;
+    text-align: center; }
+  /* line 10, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .main-header p {
+    font-size: 1.25em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding: 0em 3.5em; }
+
+/* line 16, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.logo {
+  margin: 0 auto;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 1.34884em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 1.48837em; }
+  /* line 20, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .logo img {
+    width: 100%;
+    height: 100%; }
+
+/* line 23, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.inner-wrap {
+  margin: 65px auto 0 auto;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 56.875em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding: 0em 1.25em;
+  position: relative;
+  z-index: 1; }
+
+/* line 31, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.form-container {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-top: 4.25em; }
+
+/* line 33, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.form-content {
+  position: relative;
+  float: left;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 44.375em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 4.25em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-right: 0.625em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff; }
+  /* line 41, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .form-content label {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: -1.85714em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-bottom: 0.14286em; }
+  /* line 47, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .form-content li:first-child label {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-left: 2.85714em; }
+
+/* line 52, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.form-btn {
+  float: left;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 11.875em; }
+
+/* line 57, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.search-type {
+  text-align: center;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-top: 1.625em; }
+  /* line 60, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .search-type .block {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 1.625em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding: 0.1875em 0.9375em 0.1875em 0.1875em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-right: 1.5em;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    /* line 70, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+    .search-type .block:last-child {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-right: 0em; }
+    /* line 71, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+    .search-type .block:hover {
+      border-color: #fff;
+      background: rgba(0, 0, 0, 0.5); }
+      /* line 74, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+      .search-type .block:hover .ez-radio {
+        opacity: 1; }
+    /* line 76, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+    .search-type .block.active {
+      border-color: #fff;
+      background: rgba(0, 0, 0, 0.5); }
+      /* line 79, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+      .search-type .block.active .ez-radio {
+        opacity: 1; }
+  /* line 82, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .search-type label {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    font-size: 1.125em;
+    font-style: normal;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    line-height: 0.77778em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-left: 0.22222em; }
+
+/* line 92, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.search-type-txt {
+  text-align: center;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-top: 3em; }
+  /* line 95, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .search-type-txt p {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    line-height: 1.375em;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 0.02em; }
+    /* line 100, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+    .search-type-txt p span {
+      display: block; }
+
+/* line 104, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.search-by-all {
+  position: relative; }
+  /* line 106, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .search-by-all:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    left: 2.5em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: -0.625em;
+    display: block;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 1.3125em;
+    height: 1.3125em;
+    background: url("../images/search-ico.png") no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+/* line 120, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.search-by-apartment li {
+  float: left; }
+  /* line 122, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .search-by-apartment li:nth-child(2) {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 4em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-right: 1.25em; }
+
+/* line 129, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.date-range-cont {
+  color: #000;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding-right: 1.6875em;
+  position: relative;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding-bottom: 0.9375em; }
+  /* line 134, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .date-range-cont label {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: -0.78571em;
+    display: block;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 1.21429em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 1.5em;
+    background: url("../images/calendar-ico.png") no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; }
+  /* line 145, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .date-range-cont input {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 6.25em;
+    border: 1px solid #d5d5d5;
+    padding: 0;
+    text-align: center;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 0.9375em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 2.375em;
+    border-radius: 0;
+    font-size: 1em; }
+
+/* line 157, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.fields-cont {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+/* line 164, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+.search-type-txt {
+  position: relative;
+  width: 100%;
+  text-align: center; }
+  /* line 168, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  .search-type-txt p {
+    width: 100%; }
+
+@media only screen and (max-width: 1024px) {
+  /* line 173, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_base.scss */
+  body {
+    font-size: 14px; } }
+@media screen and (max-width: 960px) {
+  /* line 2, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  body {
+    min-height: inherit; }
+
+  /* line 3, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .video-wrapper {
+    background: url("../images/slide1.jpg") center center no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+  /* line 7, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .video-cont {
+    display: none; }
+
+  /* line 8, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .inner-wrap {
+    width: 100%;
+    padding: 0 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 22px; }
+
+  /* line 14, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .form-container {
+    margin-top: 0; }
+
+  /* line 15, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .form-content {
+    float: none;
+    margin-right: 0;
+    width: 100%; }
+
+  /* line 20, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .social {
+    position: static;
+    margin-top: 42px;
+    padding-bottom: 42px; }
+    /* line 24, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+    .social ul {
+      margin-top: 0; }
+
+  /* line 26, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .main-header h2 {
+    margin-top: 22px; }
+
+  /* line 27, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .main-header p {
+    padding: 0; }
+
+  /* line 28, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .form-btn {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 22px; }
+    /* line 33, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+    .form-btn .stn-btn {
+      width: 160px; }
+
+  /* line 35, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .search-type-txt {
+    height: 40px;
+    overflow: hidden; }
+
+  /* line 36, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .wrap .main {
+    height: auto; }
+
+  /* line 37, /Users/admin/Works/karpaty_main/pages/source/stylesheets/partials/_responsivemedia.scss */
+  .search-type .block {
+    margin-right: 10px; } }

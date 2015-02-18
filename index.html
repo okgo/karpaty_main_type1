@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width' name='viewport'>
+    <title>KARPATY.UA - Дізнавайся про світ з нами!</title>
+    <link href='/images/favico.png' rel='shortcut icon' type='image/x-icon'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800|PT+Sans:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class='wrap'>
+      <div class='video-wrapper'>
+        <video autoplay='' class='video-cont' loop='' muted='' poster='images/slide1.jpg'>
+          <source src='http://secure-c.vimeocdn.com/p/video/yosemite_hd_ii_hd.webm' type='video/webm'>
+          <source src='http://secure-c.vimeocdn.com/p/video/yosemite_hd_ii_hd.mp4' type='video/mp4'>
+        </video>
+      </div>
+      <section class='main'>
+        <header class='main-header'>
+          <h1 class='logo'>
+            <img alt='#' src='images/logo.png'>
+          </h1>
+          <h2>Дізнавайся про світ з Karpaty.ua</h2>
+          <p>
+            Використовуй пошук, знаходь цікаві та оригінальні
+            <a href='#'>місця</a>
+            ,
+            <a href='#'>маршрути</a>
+            ,
+            <a href='#'>події</a>
+            ,
+            <a href='#'>житло</a>
+            або ж не обмежуй себе
+          </p>
+        </header>
+        <div class='inner-wrap'>
+          <div class='form-container'>
+            <form action='/' id='search-form'>
+              <div class='search-fields clearfix'>
+                <div class='form-content'>
+                  <div class='fields-cont search-by-all by-all'>
+                    <input id='all-search-input' placeholder='Шукай' type='text'>
+                  </div>
+                  <div class='fields-cont search-by-apartment by-apt' style='display: none'>
+                    <ul class='clearfix'>
+                      <li>
+                        <label for='apt-search-input'>Населений пункт</label>
+                        <input id='apt-search-input' type='text'>
+                      </li>
+                      <li>
+                        <label>Гостей</label>
+                        <div class='custom-select'>
+                          <select>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li>
+                        <label>Дата бронювання</label>
+                        <div class='date-range-cont'>
+                          <label for='chekin'></label>
+                          <input id='chekin' placeholder='00.00.0000' type='text'>
+                          -
+                          <input id='chekout' placeholder='00.00.0000' type='text'>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class='fields-cont search-by-event by-event' style='display: none'>
+                    <input id='event-search-input' placeholder='Шукай цікаві події' type='text'>
+                  </div>
+                  <div class='fields-cont search-by-region by-region' style='display: none'>
+                    <input id='region-search-input' placeholder='Шукай регіон' type='text'>
+                  </div>
+                </div>
+                <div class='form-btn'>
+                  <button class='stn-btn'>
+                    <span></span>
+                    шукати
+                  </button>
+                </div>
+              </div>
+              <div class='search-type clearfix'>
+                <div class='block'>
+                  <input id='by-apt' name='search_type' type='radio'>
+                  <label for='by-apt'>житло</label>
+                </div>
+                <div class='block'>
+                  <input id='by-event' name='search_type' type='radio'>
+                  <label for='by-event'>події</label>
+                </div>
+                <div class='block'>
+                  <input id='by-region' name='search_type' type='radio'>
+                  <label for='by-region'>регіони</label>
+                </div>
+              </div>
+              <div class='search-type-txt'>
+                <p class='fields-cont by-all'>
+                  обирай категорію для швидкого пошуку
+                  <span>та кращого результату</span>
+                </p>
+                <p class='fields-cont by-apt' style='display: none;'>
+                  обрано категорію житло, ми знайдемо для Вас
+                  <span>безліч варіантів у конкретній локації</span>
+                </p>
+                <p class='fields-cont by-event' style='display: none;'>
+                  обрано категорію події, ми знайдемо для Вас
+                  <span>безліч варіантів у конкретній локації</span>
+                </p>
+                <p class='fields-cont by-region' style='display: none;'>
+                  обрано категорію регіони!
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class='social'>
+        <ul class='clearfix'>
+          <li>
+            <a class='instagram' href='#'></a>
+          </li>
+          <li>
+            <a class='gplus' href='#'></a>
+          </li>
+          <li>
+            <a class='vk' href='#'></a>
+          </li>
+          <li>
+            <a class='twitter' href='#'></a>
+          </li>
+          <li>
+            <a class='facebook' href='#'></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+  </body>
+</html>

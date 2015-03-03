@@ -9,6 +9,44 @@
   </head>
   <body>
     <div class='wrap'>
+      <a class='menu-burger' href='#' id='menu-toggler'>
+        <span class='line'></span>
+      </a>
+      <div class='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='main-menu'>
+        <nav class='main-menu'>
+          <ul>
+            <li>
+              <a data-hover='Karpaty.ua' href='#'>Karpaty.ua</a>
+            </li>
+            <li>
+              <a data-hover='Гід регіонами' href='#'>Гід регіонами</a>
+            </li>
+            <li>
+              <a data-hover='Календар подій' href='#'>Календар подій</a>
+            </li>
+            <li>
+              <a data-hover='Бронювання житла' href='#'>Бронювання житла</a>
+            </li>
+          </ul>
+        </nav>
+        <div class='usefull-links'>
+          <ul>
+            <li>
+              <a data-hover='Про Карпати.UA' href='#'>Про Карпати.UA</a>
+            </li>
+            <li>
+              <a data-hover='Контактна інформація' href='#'>Контактна інформація</a>
+            </li>
+            <li>
+              <a data-hover='Реклама на сайті' href='#'>Реклама на сайті</a>
+            </li>
+          </ul>
+          <p class='copyright'>
+            Всі права застережено
+            <span>© KARPATY.UA</span>
+          </p>
+        </div>
+      </div>
       <div class='video-wrapper'>
         <video autoplay='' class='video-cont' loop='' muted='' poster='images/slide1.jpg'>
           <source src='http://secure-c.vimeocdn.com/p/video/yosemite_hd_ii_hd.webm' type='video/webm'>
@@ -20,9 +58,9 @@
           <h1 class='logo'>
             <img alt='#' src='images/logo.png'>
           </h1>
-          <h2>Дізнавайся про світ з Karpaty.ua</h2>
+          <h2>контентний ресурс Karpaty.ua</h2>
           <p>
-            Використовуй пошук, знаходь цікаві та оригінальні
+            Скористайся пошуком, знаходь цікаві та оригінальні
             <a href='#'>місця</a>
             ,
             <a href='#'>маршрути</a>
@@ -36,6 +74,12 @@
         <div class='inner-wrap'>
           <div class='form-container'>
             <form action='/' id='search-form'>
+              <div class='search-type clearfix'>
+                <a class='block active hint--top' data-hint='В обраній категорії “Житло”, ми знайдемо для Вас чимало пропозиції відпочинку' href='#' id='by-all' name='search_type'>шукати всюди</a>
+                <a class='block hint--top' data-hint='В обраній категорії “Житло”, ми знайдемо для Вас чимало пропозиції відпочинку' href='#' id='by-apt' name='search_type'>житло</a>
+                <a class='block hint--top' data-hint='В обраній категорії “Події”, ми знайдемо для Вас чимало цікавих подій' href='#' id='by-event' name='search_type'>події</a>
+                <a class='block hint--top' data-hint='В обраній категорії “Регіони”, ми знайдемо для Вас чимало описів цікавих Вам регіонів' href='#' id='by-region' name='search_type'>регіони</a>
+              </div>
               <div class='search-fields clearfix'>
                 <div class='form-content'>
                   <div class='fields-cont search-by-all by-all'>
@@ -76,10 +120,25 @@
                     </ul>
                   </div>
                   <div class='fields-cont search-by-event by-event' style='display: none'>
-                    <input id='event-search-input' placeholder='Шукай цікаві події' type='text'>
+                    <ul class='clearfix'>
+                      <li>
+                        <label for='event-search-input'>Назва події</label>
+                        <input id='event-search-input' type='text'>
+                      </li>
+                      <li>
+                        <label>Дата проведення</label>
+                        <div class='date-range-cont'>
+                          <label for='chekin'></label>
+                          <input id='chekin' placeholder='00.00.0000' type='text'>
+                          -
+                          <input id='chekout' placeholder='00.00.0000' type='text'>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class='fields-cont search-by-region by-region' style='display: none'>
-                    <input id='region-search-input' placeholder='Шукай регіон' type='text'>
+                    <input id='region-search-input' type='text'>
+                    <label for='region-search-input'>Назва регіону</label>
                   </div>
                 </div>
                 <div class='form-btn'>
@@ -88,37 +147,6 @@
                     шукати
                   </button>
                 </div>
-              </div>
-              <div class='search-type clearfix'>
-                <div class='block'>
-                  <input id='by-apt' name='search_type' type='radio'>
-                  <label for='by-apt'>житло</label>
-                </div>
-                <div class='block'>
-                  <input id='by-event' name='search_type' type='radio'>
-                  <label for='by-event'>події</label>
-                </div>
-                <div class='block'>
-                  <input id='by-region' name='search_type' type='radio'>
-                  <label for='by-region'>регіони</label>
-                </div>
-              </div>
-              <div class='search-type-txt'>
-                <p class='fields-cont by-all'>
-                  обирай категорію для швидкого пошуку
-                  <span>та кращого результату</span>
-                </p>
-                <p class='fields-cont by-apt' style='display: none;'>
-                  обрано категорію житло, ми знайдемо для Вас
-                  <span>безліч варіантів у конкретній локації</span>
-                </p>
-                <p class='fields-cont by-event' style='display: none;'>
-                  обрано категорію події, ми знайдемо для Вас
-                  <span>безліч варіантів у конкретній локації</span>
-                </p>
-                <p class='fields-cont by-region' style='display: none;'>
-                  обрано категорію регіони!
-                </p>
               </div>
             </form>
           </div>

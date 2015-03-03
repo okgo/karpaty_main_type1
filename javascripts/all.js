@@ -11742,21 +11742,6 @@ window.Modernizr = (function( window, document, undefined ) {
 // source/js/modernizr.js
 
 ;
-/**
- * ezMark (Minified) - A Simple Checkbox and Radio button Styling plugin. This plugin allows you to use a custom Image for 
- * Checkbox or Radio button. Its very simple, small and easy to use.
- * 
- * Copyright (c) Abdullah Rubiyath <http://www.itsalif.info/>.
- * Released under MIT License
- * 
- * @author Abdullah Rubiyath
- * @version 1.0
- * @date June 27, 2010
- */
-
-(function($){$.fn.ezMark=function(options){options=options||{};var defaultOpt={checkboxCls:options.checkboxCls||'ez-checkbox',radioCls:options.radioCls||'ez-radio',checkedCls:options.checkedCls||'ez-checked',selectedCls:options.selectedCls||'ez-selected',hideCls:'ez-hide'};return this.each(function(){var $this=$(this);var wrapTag=$this.attr('type')=='checkbox'?'<div class="'+defaultOpt.checkboxCls+'">':'<div class="'+defaultOpt.radioCls+'">';if($this.attr('type')=='checkbox'){$this.addClass(defaultOpt.hideCls).wrap(wrapTag).change(function(){if($(this).is(':checked')){$(this).parent().addClass(defaultOpt.checkedCls);}
-else{$(this).parent().removeClass(defaultOpt.checkedCls);}});if($this.is(':checked')){$this.parent().addClass(defaultOpt.checkedCls);}}
-else if($this.attr('type')=='radio'){$this.addClass(defaultOpt.hideCls).wrap(wrapTag).change(function(){$('input[name="'+$(this).attr('name')+'"]').each(function(){if($(this).is(':checked')){$(this).parent().addClass(defaultOpt.selectedCls);}else{$(this).parent().removeClass(defaultOpt.selectedCls);}});});if($this.is(':checked')){$this.parent().addClass(defaultOpt.selectedCls);}}});}})(jQuery);
 // moment.js
 // version : 2.1.0
 // author : Tim Wood
@@ -14541,12 +14526,106 @@ if (typeof jQuery !== 'undefined' && (typeof document.addEventListener === 'func
 
 
 })();
+/*!
+ * classie v1.0.1
+ * class helper functions
+ * from bonzo https://github.com/ded/bonzo
+ * MIT license
+ * 
+ * classie.has( elem, 'my-class' ) -> true/false
+ * classie.add( elem, 'my-new-class' )
+ * classie.remove( elem, 'my-unwanted-class' )
+ * classie.toggle( elem, 'my-class' )
+ */
+
+/*jshint browser: true, strict: true, undef: true, unused: true */
+/*global define: false, module: false */
+
+
+( function( window ) {
+
+'use strict';
+
+// class helper functions from bonzo https://github.com/ded/bonzo
+
+function classReg( className ) {
+  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+}
+
+// classList support for class management
+// altho to be fair, the api sucks because it won't accept multiple classes at once
+var hasClass, addClass, removeClass;
+
+if ( 'classList' in document.documentElement ) {
+  hasClass = function( elem, c ) {
+    return elem.classList.contains( c );
+  };
+  addClass = function( elem, c ) {
+    elem.classList.add( c );
+  };
+  removeClass = function( elem, c ) {
+    elem.classList.remove( c );
+  };
+}
+else {
+  hasClass = function( elem, c ) {
+    return classReg( c ).test( elem.className );
+  };
+  addClass = function( elem, c ) {
+    if ( !hasClass( elem, c ) ) {
+      elem.className = elem.className + ' ' + c;
+    }
+  };
+  removeClass = function( elem, c ) {
+    elem.className = elem.className.replace( classReg( c ), ' ' );
+  };
+}
+
+function toggleClass( elem, c ) {
+  var fn = hasClass( elem, c ) ? removeClass : addClass;
+  fn( elem, c );
+}
+
+var classie = {
+  // full names
+  hasClass: hasClass,
+  addClass: addClass,
+  removeClass: removeClass,
+  toggleClass: toggleClass,
+  // short names
+  has: hasClass,
+  add: addClass,
+  remove: removeClass,
+  toggle: toggleClass
+};
+
+// transport
+if ( typeof define === 'function' && define.amd ) {
+  // AMD
+  define( classie );
+} else if ( typeof exports === 'object' ) {
+  // CommonJS
+  module.exports = classie;
+} else {
+  // browser global
+  window.classie = classie;
+}
+
+})( window );
 (function() {
   $(document).ready(function() {
+    $('#menu-toggler').on('click', function() {
+      var menu;
+      menu = document.getElementById('main-menu');
+      classie.toggle(this, 'active');
+      return classie.toggle(menu, 'cbp-spmenu-open');
+    });
     $('#search-form')[0].reset();
-    $('input[name=search_type]').on('click', function() {
+    $('a[name=search_type]').on('click', function() {
       var searchClass;
       searchClass = '.' + this.id;
+      $(this).closest('#search-form').find('.block').removeClass('active');
+      $(this).addClass('active');
       $(this).closest('#search-form').find('.fields-cont').fadeOut();
       return $(this).closest('#search-form').find(searchClass).fadeIn();
     });
@@ -14555,13 +14634,6 @@ if (typeof jQuery !== 'undefined' && (typeof document.addEventListener === 'func
       weekStart: 1,
       direction: "today-future",
       format: "DD.MM.YYYY"
-    });
-    $('input[type="checkbox"], input[type="radio"]').ezMark();
-    $('input[name=search_type]').change(function() {
-      if ($(this).is(':checked')) {
-        $(this).closest('.search-type').find('.block').removeClass('active');
-        return $(this).closest('.block').addClass('active');
-      }
     });
     return $('input[type="text"]').on('focus', function() {
       return $(this).closest('#search-form').find('.stn-btn span').animate({

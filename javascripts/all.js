@@ -14614,6 +14614,14 @@ if ( typeof define === 'function' && define.amd ) {
 })( window );
 (function() {
   $(document).ready(function() {
+    $('a.link').click(function() {
+      $('.submenu-available ul').slideUp();
+      $('.submenu-available').removeClass('opened');
+      if (!$(this).next().is(':visible')) {
+        $(this).next().slideDown();
+        $(this).parent().addClass('opened');
+      }
+    });
     $('#menu-toggler').on('click', function() {
       var menu;
       menu = document.getElementById('main-menu');
